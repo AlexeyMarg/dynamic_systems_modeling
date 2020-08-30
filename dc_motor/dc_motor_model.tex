@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+	DC motor model
+\end{center}
+
+Electric circuit equation:
+
+\begin{equation}
+	L\frac{dI}{dt}+RI=U-E_b,
+\end{equation}
+where
+\begin{itemize}
+	\item $L$ is a rotor armature inductance,
+	\item $R$ is a rotor armature resistance,
+	\item $I$ is a current,
+	\item $U$ is an input stator voltage,
+	\item $E_b=k_e\omega$ is a back electromagnetic force, \item $k_e$ is an backEMF constant,
+	\item $\omega$ is a velocity. 
+\end{itemize}
+
+Newton second law:
+
+\begin{equation}
+	J\dot{\omega}=k_m*I-k_f*\omega,
+\end{equation}
+where
+\begin{itemize}
+	\item $J$ is an inertia momentum,
+	\item $k_m$ is an electromechanical constant, depending on flux
+	\item $k_f$ is a friction coefficient.
+\end{itemize}
+
+Rewrite model
+\begin{equation}
+\left\{\begin{aligned}
+		&\dot{\phi}=\omega\\
+		&\dot{\omega}=\frac{k_m}{J}I-\frac{k_f}{J}\omega\\
+		&\dot{I}=\frac{1}{L}u-\frac{k_e}{L}\omega-\frac{R}{L}I
+		\end{aligned} \right.
+\end{equation}
+	
+\end{document}
