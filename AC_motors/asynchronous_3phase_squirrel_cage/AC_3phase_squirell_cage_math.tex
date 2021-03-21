@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper,oneside]{report}
+
+\usepackage{amsmath}
+
+\begin{document}
+\section{Static stator and rotor equations}
+Stator equations in $\alpha\beta$ coordinates:
+
+\begin{equation}
+	\left\{
+		\begin{split}
+			& U_{s\alpha} = \frac{d\phi_{s\alpha}}{dt}+I_{s\alpha}R_s\\
+			& U_{s\beta} = \frac{d\phi_{s\beta}}{dt}+I_{s\beta}R_s
+		\end{split}
+	\right.
+\end{equation}
+
+Stator equations in $dq$ coordinates:
+
+\begin{equation}
+	\left\{
+	\begin{split}
+		& 0 = \frac{d\phi_{sd}}{dt}+I_{sd}R_r\\
+		& 0 = \frac{d\phi_{sq}}{dt}+I_{sq}R_r
+	\end{split}
+	\right.
+\end{equation}
+
+Axis $d$ is oriented along rotor flux. Therefore, $\phi_{rq} = 0$.
+
+Magnetic field  and rotor velocities are coupled by equation
+\begin{equation}
+	\Delta\omega = \omega_e-Z\omega_r,
+\end{equation}
+where $\Delta\omega$ is a sliding velocity, $\omega_e$ is an electromagnetic field rotation velocity, $Z$ is a number of pole pairs, $\omega_r$ is a rotor velocity.
+
+Rotor and stator equations in $dq$ coordinates:
+\begin{equation}
+	\label{rs-dq}
+	\left\{
+	\begin{split}
+		& U_{sd} = \frac{d\phi_{sd}}{dt}+I_{sd}R_s-\omega_e\phi_{sq},\\
+		& U_{sq} = \frac{d\phi_{sq}}{dt}+I_{sq}R_s+\omega_e\phi_{sd},\\
+		& 0 = \frac{d\phi_{rd}}{dt}+I_{rd}R_r,\\
+		& 0 = I_{rq}R_r + \Delta\omega\phi_{rd}.
+	\end{split}
+	\right.
+\end{equation}
+
+\section{Electromagnetic processes}
+
+Stator flux in $dq$ coordinates:
+\begin{equation}
+	\label{s-flux-dq}
+	\left\{
+	\begin{split}
+		& \phi_{sd} = (L_s-L_mK_r)I_{sd}+K_r\phi_r, \\
+		& \phi_{sq} = (L_s-L_mK_r)I_{sq}
+	\end{split}
+	\right.
+\end{equation}
+where $K_r=L_m/L_r$.
+
+Taking into account (\ref{rs-dq}) and (\ref{s-flux-dq}) yields:
+
+\begin{equation}
+	\left\{
+	\begin{split}
+		& pI_{sd} = \frac{1}{L_s-L_mK_r}(U_{sd}-I_{sd}R_s-K_rp\phi_r)+\omega_e I_{sq},\\
+		& pI_{sq} = \frac{1}{L_s-L_mK_r}(U_{sq}-I_{sq}R_s-K_r\omega_e\phi_r)-\omega_e I_{sd}
+	\end{split}
+	\right.
+\end{equation}
+
+Stator equations in $dq$ coordinates:
+
+\begin{equation}
+	\left\{
+	\begin{split}
+		& 0=\frac{d\phi_r}{dt}+I_{rd}R_r,\\
+		& I_{rd} = \frac{1}{L_r}\phi_r-\frac{L_m}{L_r}I_{sd}
+	\end{split}
+	\right.
+\end{equation}
+
+Obtain flux equation
+
+\begin{equation}
+	p\phi_r = \frac{1}{T_r}(L_mI_{sd}-\phi_r).
+\end{equation}
+where $T_r=L_r/R_r$.
+
+Sliding velocity equations:
+
+\begin{equation}
+	\left\{
+	\begin{split}
+		& 0 = I_{rq}R_r+\Delta\omega\phi_r,\\
+		& I_{rq} = -\frac{L_m}{L_R}I_{sq}
+	\end{split}
+	\right.=>\Delta\omega=\frac{L_mR_r}{\phi_rL_r}I_{sq}=\frac{K_rR_r}{\phi_r}I_{sq}=\frac{L_m}{\phi_rT_r}I_{sq}
+\end{equation}
+
+Filed velocity:
+\begin{equation}
+	\omega_e = Z\omega_r+\Delta\omega= Z\omega_r+\frac{L_m}{\phi_rT_r}I_{sq}.
+\end{equation}
+
+\section{Momentum equation}:
+
+\begin{equation}
+	\label{Me}
+	M_e = \frac{3}{2}Z(I_{sq}\phi_{sd} - I_sd\phi{sq})
+\end{equation}
+
+Taking into account (\ref{Me}) and (\ref{s-flux-dq}):
+
+\begin{equation}
+	M_e = \frac{3ZK_r}{2}\phi_rI_{sq}
+\end{equation}
+
+\section{Resulting system}
+
+\begin{equation}
+	\left\{
+	\begin{split}
+		& pI_{sd}=\frac{1}{L_s-L_mK_r}(U_{sd}-I_{sd}R_s-K_rp\phi_r)+\omega_e\\
+		& pI_{sq}=\frac{1}{L_s-L_mK_r}(U_{sq}-I_{sq}R_s-K_r\omega_e\phi_r)-\omega_e I+{sd}\\
+		& p\phi_r=\frac{1}{T_r}(L_mI_{sd}-\phi_r)\\
+		& \omega_e = Z\omega_r+\frac{L_m}{\phi_rT_r}I_{sq}\\
+		& M_e=\frac{3ZK_r}{2}\phi_rI_{sq}\\
+		& pJ\omega_r = M_e- M
+	\end{split}
+	\right.
+\end{equation}
+where $M$ is an external force momentum acting on rotor
+
+\end{document}
