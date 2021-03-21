@@ -24,9 +24,20 @@
       - three_phase_PMSM_math.tex - model description in latex
       - three_phase_PMSM.slx - modeling in simulink
       - three_phase_PMSM_parameters.m - parameters for simulinl model.
-   - two_phase_non_salient_PMSM - modeling of 3-phase non salient permanent magnet synchronous motors
+   - two_phase_non_salient_PMSM - modeling of 2-phase non salient permanent magnet synchronous motors
       - two_phase_PMSM_math.tex - model description in latex
       - two_phase_PMSM.slx - modeling in simulink
       - two_phase_PMSM_parameters.m - parameters for simulinl model.
+
+- two-phase_electric_machine - modeling of general 2-phase electric machine
+   - non_salient - non salient pole machine
+      - two_phase_non_salient_generalized_machine_math.tex - latex model description
+      - two_phase_non_salient_electric_machine.slx - modeling in simulink
+      - two_phase_non_salient_electric_machine_parameters.m - model parameters
+  - salient - salient pole machine
+      - two_phase_salient_generalized_machine_math.tex - latex model description
+      - two_phase_salient_electric_machine.slx - modeling in simulink
+      - two_phase_salient_electric_machine_parameters.m - model parameters
+
 
  
