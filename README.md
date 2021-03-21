@@ -18,4 +18,11 @@
       - AC_3phase_squirell_cage_math.tex - model description in latex
       - asynchronous_motor_3phase_squirell_cage.slx - modeling in simulink
       - asynchronous_3phase_squirell_cage_parameters.m - parameters for simulinl model.
+
+- Synchronous_motors - modeling of synchronous motors
+   - three_phase_non_salient_PMSM - modeling of 3-phase non salient permanent magnet synchronous motors
+      - three_phase_PMSM_math.tex - model description in latex
+      - three_phase_PMSM.slx - modeling in simulink
+      - three_phase_PMSM_parameters.m - parameters for simulinl model.
+
  
