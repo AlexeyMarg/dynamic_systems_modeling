@@ -12,4 +12,10 @@
     - simulink_model.slx - modeling in simulink
     - pendulum_parameters.m - parameters for simulinl model.
     - Cart-pendulum.png - kinematic scheme from https://en.wikipedia.org/wiki/Inverted_pendulum
+
+- AC_motors - modeling of AC motors
+   - asynchronous_3phase_squirrel_cage = modeling of 3-phase synchronous motor with a squirrel cage rotor
+      - AC_3phase_squirell_cage_math.tex - model description in latex
+      - asynchronous_motor_3phase_squirell_cage.slx - modeling in simulink
+      - asynchronous_3phase_squirell_cage_parameters.m - parameters for simulinl model.
  
