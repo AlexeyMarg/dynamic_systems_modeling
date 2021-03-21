@@ -24,5 +24,9 @@
       - three_phase_PMSM_math.tex - model description in latex
       - three_phase_PMSM.slx - modeling in simulink
       - three_phase_PMSM_parameters.m - parameters for simulinl model.
+   - two_phase_non_salient_PMSM - modeling of 3-phase non salient permanent magnet synchronous motors
+      - two_phase_PMSM_math.tex - model description in latex
+      - two_phase_PMSM.slx - modeling in simulink
+      - two_phase_PMSM_parameters.m - parameters for simulinl model.
 
  
