@@ -39,5 +39,10 @@
       - two_phase_salient_electric_machine.slx - modeling in simulink
       - two_phase_salient_electric_machine_parameters.m - model parameters
 
+- BLDC - brushless DC motor
+   - BLDC_math_description.tex - latex model description
+   - BLDC.slx  - modeling in simulink
+   - BLDC_parameters.m  - model parameters
+
 
  
