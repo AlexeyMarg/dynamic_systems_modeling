@@ -43,6 +43,10 @@
    - BLDC_math_description.tex - latex model description
    - BLDC.slx  - modeling in simulink
    - BLDC_parameters.m  - model parameters
+   
+ - quadrotor - some quadrotor models
+	- quadrotor_parameters.m - quadrotor parameters
+	- quadrotor_model.slx - modeling of quadrotor dynamics
 
 
  
