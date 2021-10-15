@@ -47,6 +47,7 @@
  - quadrotor - some quadrotor models
 	- quadrotor_parameters.m - quadrotor parameters
 	- quadrotor_model.slx - modeling of quadrotor dynamics
+	= quadrotor_modeles.slx - subsystems: quadrotor dynamics, motors velocities to forces, forces to motor velocities
 
 
  
