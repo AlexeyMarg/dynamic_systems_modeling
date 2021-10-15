@@ -40,7 +40,30 @@ $g$ is a free fall  acceleration
 
 $I_x$, $I_y$, $I_z$ are inertia momentums along respective axis of quadrotor
 
+$l$ is the distance between any rotor and the center of the quadrotor
 
+$b$ is the thrust coefficient
+
+$d$ is the drag factor
+
+
+Dependence between forces and velocities:
+
+\begin{eqnarray}
+	& f_t = b(\Omega_1^2 + \Omega_2^2 + \Omega_3^2 + \Omega_4^2) \\
+	& \tau_x = bl(\Omega_3^2 - \Omega_1^2) \\
+	& \tau_y = bl(\Omega_4^2 - \Omega_2^2) \\
+	& \tau_z = d(\Omega_1^2 + \Omega_4^2 - \Omega_1^2 - \Omega_3^2)
+\end{eqnarray}
+
+where $\Omega$ is a velocity
+
+\begin{eqnarray}
+	& \Omega_1 = \sqrt{\frac{f_t - \frac{b}{d}\tau_z-\frac{2}{l}\tau_x}{4b}} \\
+	& \Omega_2 = \sqrt{\frac{f_t + \frac{b}{d}\tau_z-\frac{2}{l}\tau_y}{4b}}  \\
+	& \Omega_3 = \sqrt{\frac{f_t - \frac{b}{d}\tau_z +\frac{2}{l}\tau_x}{4b}}  \\
+	& \Omega_4 = \sqrt{\frac{f_t + \frac{b}{d}\tau_z +\frac{2}{l}\tau_y}{4b}} 
+\end{eqnarray}
 
 	
 \end{document}
