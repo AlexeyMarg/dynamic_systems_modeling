@@ -17,7 +17,7 @@ Parameters:
 - $c_{12} = 6.0 · 10^{−4}m^{5/2}/s$ - Flow constant of valve $V_{12}$
 - $c_2 = 2.0 · 10^{−4}m^{5/2}/s$ - Flow constant of the outlet of Tank 2
 - $c_L = 8.0 · 10^{−4}m^{5/2}/s$ - Flow constant of a leakage in Tank 1
-- $c_M = 12.01/(min · m^{1/2})$ - Constant of outflow sensor
+- $c_M = 12.0 \textrm{ }1/(min · m^{1/2})$ - Constant of outflow sensor
 - $\bar{q}_P = 1.5 · 10^{−4}m^{3}/s$ - Flow constant of the pump
 
 Dynamic equations:
