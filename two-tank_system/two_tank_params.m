@@ -1,0 +1,10 @@
+A = 1.54;
+h_max = 0.6;
+u_nom = 1;
+u_max = 5;
+c_12 = 6e-4;
+c_2 = 2e-4;
+c_L = 8e-4;
+c_M = 12.0;
+q_bar_P = 1.5e-4;
+leakage = 0;% no leakage
