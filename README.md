@@ -47,7 +47,12 @@
  - quadrotor - some quadrotor models
 	- quadrotor_parameters.m - quadrotor parameters
 	- quadrotor_model.slx - modeling of quadrotor dynamics
-	= quadrotor_modeles.slx - subsystems: quadrotor dynamics, motors velocities to forces, forces to motor velocities
+	- quadrotor_modeles.slx - subsystems: quadrotor dynamics, motors velocities to forces, forces to motor velocities
+
+- Ship_nonlinear_model - nonlinear model of a surface vessel modeling with python
+- tilt_rotor_uav - modeling of tilt-rotor UAV
+- tunnel_diode - modeling of a tunnel diode circuit
+- two-tank_system - modeling of a nonlinear two-tank system
 
 
  
